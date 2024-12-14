@@ -18,3 +18,10 @@ print (recipes["dhal"][2])
     "title" : "Tutor Practitioner"
   }]
 
+with open("employee.json", "r") as infile:
+    employees_large_data = json.load(infile)
+
+    for students in student_r:
+        if students ["score"] >80:
+            students["grade"] = 'A'
+        elif students ["score"] <70 == 'B':
